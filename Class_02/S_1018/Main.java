@@ -40,7 +40,7 @@ public class Main {
 		
 		for (int y = y_index; y < end_y; y++) {
 			for (int x = x_index; x < end_x; x++) {
-				if (!matrix[y][x].equals(TF)) {
+				if (matrix[y][x].equals(TF)) {
 					count += 1;
 				}
 				
@@ -51,6 +51,7 @@ public class Main {
 					TF = "B";
 			}
 		}
+		System.out.println("count : " + count + " | 64 - count : " + (64 - count));
 		count = Math.min(count, 64 - count);
 				
 		return count;
