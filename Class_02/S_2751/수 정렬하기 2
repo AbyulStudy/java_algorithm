@@ -1,0 +1,8 @@
+문제 유형 : 정렬
+
+Arrays.sort를 사용 할 경우 시간초과 에러가 발생한다.
+Collection.sort 를 사용해도 간당간당하게 통과한다.
+	- BufferedWriter 를 사용하여 출력 할 경우 시간초과
+	- StringBuilder 를 사용하여 출력 할 경우 통과
+
+정렬 알고리즘에 대해 추가적으로 정리가 필요함
