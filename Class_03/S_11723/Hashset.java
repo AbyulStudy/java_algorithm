@@ -7,8 +7,8 @@ import java.util.HashSet;
 import java.util.StringTokenizer;
 
 public class Hashset {
-	static HashSet<Integer> S = new HashSet<>();
 	static StringBuilder sb = new StringBuilder();
+	static HashSet<Integer> S = new HashSet<>();
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
