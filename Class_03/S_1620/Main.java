@@ -37,14 +37,34 @@ public class Main {
 
 		System.out.println(sb);
 	}
-
+	
 	private static boolean isStrNum(String findStr) {
-		try {
-			Integer.parseInt(findStr);
-			return true;
-		} catch (NumberFormatException e) {
-			return false;
+		for (int i = 0; i < findStr.length(); i++) {
+			if (49 <= findStr.charAt(i) && findStr.charAt(i) <= 57) {
+				continue;
+			} else {
+				return false;
+			}
 		}
+		return true;
 	}
+	
+//	private static boolean isStrNum(String findStr) {
+//        for (int i = 0; i < findStr.length(); i++) {
+//            if (!Character.isDigit(findStr.charAt(i))) {
+//                return false;
+//            }
+//        }
+//        return true;
+//	}
+	
+//	private static boolean isStrNum(String findStr) {
+//		try {
+//			Integer.parseInt(findStr);
+//			return true;
+//		} catch (NumberFormatException e) {
+//			return false;
+//		}
+//	}
 
 }
